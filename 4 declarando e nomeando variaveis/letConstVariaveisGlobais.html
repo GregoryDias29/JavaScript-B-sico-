@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+//var myValue; // variavel declarana mais sem valor 
+
+var myValue = 5;
+
+let myValue;// permite declarar variaveis do mesmo jeito porem com algumas restriçoes 
+
+const MY_CONST = 2;
+
+const PI = 3.14
+
+/*
+se fizer isso 
+
+var myValue = 5;
+
+vat myValue = 7; neste caso não precisa colocar o var novamente 
+
+myValue vai ser igual a 7 pelo fato de ser o ultimo valor declarado
+
+porem se declarasmos a varia com let 
+
+let myValue = 5;
+
+let  myValue = 7;
+
+isso vai dar erro o console vai dizer que a variavel já existe 
+
+let não permite que vc declare a mesma variavel 2x 
+
+outro ex 
+
+os programas são lidos de cima para baixo 
+
+console.log(myValue);
+
+var myValue = 5;
+
+neste caso o console log vai monstrar undefined por que a variavel ainda não exite ela passa a existir depois do console.log 
+se caso nem tivese declarado a variavel ela teria dado um erro dizendo que ela não esta definada 
+
+caso colocamos 
+
+console.log(myValue);
+
+let myValue = 5;
+
+ele da erro ele não vai imprimir o underfined ele da erro por que o let esta sendo definido a baixo 
+
+se chama variavel por que o valor fica variando 
+
+temos tambem as constantes que logicamente são as que não alteram elas tem o mesmoc comportamento do let então são restritivas
+
+ela é declarada:
+
+const ela é geralmente declara com letras maiusculas e separadas por andescor 
+
+se tentar alterar um valor de uma const ele explode um erro por que ele fala que vc tenta atribuir um valor a uma contante
+
+ela não pode ser mais atribuida valor assim que declarada
+
+variaveis pode ser locais ou globais 
+
+no console o que é conhecido com objeto global é o window 
+
+
+
+
+
+
+
+*/
+
+if(true){
+    var a = 5;//fora ele 
+    let b = 5;//so exite aqui dentro
+    const c = 5;//so exite aqui dentro
+}
+console.log(a)
+console.log(b)//da erro
+console.log(c)//da erro 
+
+function myfun(){
+    var d = 5;//so funciona aqui dentro ou seja, local
+}
+
+myfun ();
+
+console.log(d)// não funciona 
+
+function myfung(){
+    z = 5;// variavel global
+}
+console.log(z);
+
+window.x = 8; // explicitamente dizendo que esta variavel é global
+</script>    
+</body>
+</html>
