@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<style>
+h1 {
+    text-align: center;
+}
+
+
+</style>
+
+    <h1>Abra o console e veja a magia acontencer</h1>
+
+<script>
+    /*var n1 = 3; ponto e virgula é facultativo mas asvezes pode dar problema
+    var n2 = 5;  quando vamos declarar varias variaveis com var podemos fazer assim:*/
+    var n1 = 3,
+        n2 = 5;
+    if (n1 > n2){
+        console.log('n1 é menor');
+    // }else if (condição){
+
+    // }else if (condição){
+
+    // }else if (condição){
+
+    }else{
+        console.log('n1 è menor')
+    }
+// esta forma pode ser feita tambem tnato com lest quanto por const 
+    var teste = n1 > n2 ? 'Sim é' : 'Não é'; // casos simples 
+    console.log(teste);
+
+   var sera = 5 > 10 ? 'Sim, é maior':'Não, não é maior';
+   console.log(sera);
+
+   //podemos fazer colocar valor:
+   var maior = n1 > n2 ? n1: n2; // n1 é maior que n2 ? se for retorna n1 se não retorna n2 ou seja ele retorna o maior
+/*******************************************************************************************************************************************************************/
+   var n5 = 3;
+
+//    if (n5 === 1 ){
+
+//    } else if (n5 === 2){
+
+//    } else if (n5 === 3) {
+
+//    }
+   // Switch serve para fazer varias conparações de uma variavel
+   
+    switch (n5){//abrimos parenteses e colocamos a variavel que queremos testar
+        case 1: console.log('Valor 1');break; //passsamos o case e o valor que queremos comparar que seria a mesma coisa que if (n5 === 1) ecolocamos o 2 pontos e o comando que queremos e quando termoanos colocamos o break que indica que o case foi finailizado
+        case 2: console.log('Valor 2');break;
+        case 3: console.log('Valor 3');break;// o switch tem tipo um else que seria
+        default : console.log('Outro');// caso não tenha nenhum dos valores a cima ele entra em ação
+        // o switch funciona de um jeito interesante se ele encontrar a condição (case 1) que bate com o valor que passou no switch(n1) ele vai entrar no case 1  caso seja igual se não ouver o break ele continua executando as outras linhas
+        // sem o break ele vai executar todas alinhas depois da condição 
+    }
+
+    // executar as outras linhas ex / vamos declarar um variavel valor e vamos imaginar que o valor é de uma pontiação e vamos colocar que se o cliente ganhar 300 pontos
+    // ele ganha um celular se ele conseguir 500 pontos e se ele acumular 1000 pontos ganha uma TV vamos dizer que ele so pode ganhar um deses premios então tem que colocar o break 
+    // para que não entre e diga que ele fgamhou os outros premios tambem então se ele ganhou 500 pontos ai monstra so o note, agota vamos imaginar que esta promoção ocorra de outra maneira 
+    // se vc conseguir uma pontuação mais alta vc recebe junto os premios das pontuações mais baixas então ao tirar o break pode ser feito isso facilmente então por ter 1000 pontos entra no primeiro case e ganha todos 
+    var valor = 1000 ;
+
+    switch(valor){
+        case 1000 : console.log('Ganhou TV');
+        case 500 : console.log('Ganhou Notebook');
+        case 300 : console.log('Ganhou Celular');
+    }
+   
+
+   
+   
+</script> 
+</body>
+</html>
