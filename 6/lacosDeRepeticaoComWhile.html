@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // while é bem simples, primeiro chamamos o while abre parenteses o comando dentro dos parenteses é uma condição e ela é a mesma que temos no for sendo i< 10 enquanto esta condição for verdadeira o while vai ficar girando  então teriamos que declarar fora uma variavel i e passaria aqui () a condição por ex
+    // enquanto i for < que 10 assim podemos imprimir o console log e depois no final podemos alterar a variavel colocando i++ o do por que isso o i é igual a zero e se não decrementar o i vai ser sempre igual a zero ai forma um loop infinito
+    //a principal diferença do for para o while é que o for serve para fazermos um repetição quando já temos a noção de quando se deve iniciar e parar por exemplo for (*var i = 0;aqui foi determinado para iniciar em 0* *i<10 ir ate o 10* *i++ e ir aumentando em 1 e 1 ;* )
+    // já no while ser para quando não temos ideia de quando vai parar, vamor dizer o seguinte:
+    /*
+    temos a variavel resposta e ela vai armazenar a resposta que o usuario vai respoder
+    var resposta = '';
+    
+    while(resposta !== 'sair'){ então colocamos aqui que enqquanto resposta for diferente de sair ou seja quando digitar sair o laço para 
+        resposta = propt('Digite sua resposta') isso é um comando para que a pessoa possa escrever no navegador
+        console.log('sua resposta foi ' + resposta) ou seja equanto a resposta for diferente de sair vai ficar perguntando 
+            quado digitamos sair a resposta não vai mais ser diferente de sair então a condição vai se tornar falsa e ela encera 
+    }
+
+    for quando temos noção de ate inde queremos fazer a repetição 
+    while quando não sabemos ate quando ele deve continuar repitindo
+    
+    */
+    var i = 0;
+    while(i < 10){ 
+        console.log(i);
+        i++;
+    }
+
+    var a = '';
+    while(a !== 'sair' ){
+        a = prompt('Digite sua resposta')
+        console.log('sua resposta é:' + a);   
+    } 
+</script>
+    
+</body>
+</html>

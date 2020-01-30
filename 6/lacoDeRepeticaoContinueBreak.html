@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    /*veremos dois comandos que podem ser usados  dentro dos lações de repetição para que nos cancelemos o laço ou pule  aquela etapa */
+    for(var i = 0;  i < 5; i++  ){
+        console.log(i);
+        if (i === 2){// se i for igual a 2 ele para se não continua 
+            break;
+        }else{
+
+        }
+            // break não permite que os de baixo seja executados quando colocamos um break dentro de um laço ele finaliza 
+    } // mas poderia ser um do while ou um while ele sera iniciado em zero 
+    
+    
+    //outro comando é o continiun ele serve para pular aquela etapa do laço de repetição 
+    for (var a = 0; a < 10; a++){// ele fez i é igual a 2 então ele foi para o continuar o continuar seguinifica que todas as linhas que vier para baixo ele vai iguinorar e vai continuar o laço 
+        if(a ===3 ){
+            continue;
+        }
+        console.log(a);// ele foi ate o final do loop mas pulo o 3 
+    }
+    //break para e continue pular
+
+    //verificar se o numero é par
+    for(var impar = 1; impar < 100; impar++){
+        if(impar % 2 == 0){ // if (x % !==0){ continue} ele vai pular todos os impares e mostrar os pares// % = modulo =  resto da divisão / se dividimos qualquer numero par por 2 o restante vai ser 0 se for diferente de 0 é um numero impar 
+        continue;
+        }
+        console.log('São apenas impares ' + impar);
+    } 
+
+    for (var par = 1; par  < 100; par++){
+        if (par % 2 !== 0){
+            continue;
+        }console.log('São apenas os pares ' + par);
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+for (var i = 0; i < 10; i++){// vamos iniciar um variavel em 0 e i vai ate 10 e a cada interação ele vai e=incrementar uma unidade 
+    var linha  = '';// criamos uma variavel como linha e inicamos ela vazia 
+    for (var x = 0 ; x < i; x++){// criamos outro for usamos x pois o i já foi usada no for de fora x vai ate i e nisso o x vai aumentar 
+            linha +='*'; // este for vai pegar a variavel linha e vai concatenar um * 
+    }console.log(linha); // assim que concatenar ele vai para o console log 
+}//aqui esta sendo invertido de tras para frente 
+for (var i = 10; i > 0; i--){// sendo que i vai iniciar em 10 e ele vai ate 0 e o i vai diminuir
+    var linha  = ''; // o que esta aqui não muda pois esta apenas concatenando string
+    for (var x = 0 ; x < i; x++){
+            linha +='*';
+    }console.log(linha);
+}
+
+</script>
+    
+</body>
+</html>

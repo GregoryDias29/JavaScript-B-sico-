@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+/*diferença é o while ele vai executar  sempre que a condição for verdadeira (resposta !== 'sair')
+
+então vamos fazer um auteração, ao inves de a resposta ser sair vamos colocar que tem que ser diferente de ''= vazio então se o usuario não responder nada ele não executa mas olha so o problema se iniciarmos a variavel vazia e estou falando para ele para executar enquanto for diferente de vazio bom vazio é igual a vazio então ele nem entra no loop 
+ele não funciona por que a condição já começõu falsa.
+
+var resposta = '';
+
+while(resposta !==''){
+    resposta = prompt('Digite sua resposta');
+    console.log('sua resposta foi '+ resposta );
+}
+
+o do while
+
+ele é o seguinte 
+
+passamos o while para o final e no começo colocamos o comando do então ele vai funcionar da mesma maneira que while com a diferença que ele vai executar o que esta no bloco de codigo pelo menos um vez e ele executa pois mesmo estando falsa ele executa ao menos uma vez 
+primeiro ele executa depois vê a condição ou seja mesmo que falsa ele executa pelo menos um vez então podemos retorno ela vazia e ela sai do loop porem umavez ao menos ela foi executada
+
+
+caso sua condição seja falsa e tenha que executar ao menos uma vez escolha o do while
+*/
+var resposta = '';
+
+do{
+    resposta = prompt('Digite sua respota');
+    console.log('sua resposta foi ' + resposta);
+}while(resposta !=='')
+
+</script>
+    
+</body>
+</html>
