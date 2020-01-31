@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*as arrow function sempre são funções anonimas não tem como nomealas vamos fazer um settimeout com arrow function */
+    // a primeira diferença é que ela não tem function no nome dela então colocamos o () que é onde podemos receber parametros em seguida vem o sinal de => por isso arrow function
+    //e depois da flecha ja criamos o codigo apos colocar as chaves e dentro das chaves colocamos o que queremos 
+    setTimeout( () => {
+        console.log('aaaa')} 
+    ,2000);
+    // mas ainda tem mais por ex imagine que temos uma função de callback 
+    function myFun(otherFunction){
+        console.log(otherFunction());
+    }
+
+    myFun(function(){ // aqui vamos passar o callback e passaremos o que a função esta retornando ou seja otherFunction 
+            return 123;
+    }); // estamos passadno um função anonima 
+
+    //para trasfomar em um arrow function basta:
+
+    myFun(() => {return 123;});
+
+    // qual a diferenção, como todas func podemos criar varias linhas mas com as arrow function como são muito uteis quando queremos fazer uma func de callback simples elas tambem aceitam que quando temos apenas uma linha não precisamos das chaves e nem o return 
+    myFun( () => 123);  //isso serve para calculos e execução de outras funções tambem
+
+    myFun( () => 10 + 5);
+
+    // tambem serve para os parametros das arrow 
+
+    // se tiver apenas um parametro 
+
+    myFun ( myFun2 => 10 +5) // podemos omitir os parenteses 
+
+    // co uma function normal 
+    myFun(function(myFun2){
+        return 10 + 5;
+
+    });
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+/* para declarar uma função utilizamos a palavra reservada function e em seguida colocamos o nome
+
+ function sum (){
+     console.log(56) não aconteceu nada, por que, por que so declaramos função não chamamos ela as funções devem ser chamadas ou executadas 
+ } 
+para fazer isso chamamos a função pelo nome e passa os dois () no console se chamar so o sum ele vai monstrar qual é a função para poder executar a function tem que colocar os ()
+ou seja sum()
+ function sum () {
+     console.log(56)
+ } no console ao colocar sum() ele imprime o 56 então podemos colocar qualquer codigo na function e sempre que precisar da function chamos ele denovo 
+ as funções recebem tamebm parametros ou argumentos são variaveis que passamos dentro dos () por exempo quero fazer uma soma precisamos de 2 numeros então fazemos assim 
+
+function sum(n1,n2){ declaramos uma variavel n1 e n2 não precisa passar nem var, let nem const 
+    console.log(n1 + n2); então damos um console.log então mandamos ele mosntrar a soma de n1 + n2 
+} então no navegador chamamos o sum() e passamos o vamor dentro dos () //// no console DevTools = sum(5,3) na hora de executar ele monstra o resultado de 5+3 = 8
+porem so estamos mandado imprimir o valor não conseguimos pegar e se eu quises que ele retornace o valor do calculo que ele fez é ai que entra o valor return 
+
+então fazemos assim 
+
+function sum (n1,n2){
+    var total = n1 + n2;   criamos uma variavel total e fazemos a soma aqui, agora a variavel total tem o resultado da soma de n1 + n2 
+    return total;    então damos o comando return 
+}
+
+vamos no cosole:
+sum(5 , 35) executamos 
+40 ele retorna a soma 
+mas agora que estamos retornando com return podemos armazenar em uma ariavel 
+
+var n3 = sum(10,5)
+
+n3 se chamarmos n3 ele recebe o resulta da soma e guarda o resultado em n3 da função 
+15
+----------------
+o return finaliza a função 
+function sum(n1,n2){
+    var total = 0;
+    retun total; para aqui 
+    total = n1 + n2;iguinorado 
+} outra coisa ao inves de usar o break pode ser usado o retun para para o laço de repetição 
+
+ex
+
+function sum (n1,n2){
+    var total = 0;
+    for (a=0; a <10; a++){
+        console.log(i);
+        if (i ===2){
+            return'finish''
+        }
+    }
+}
+
+result = 
+0
+1
+2
+n3 
+'finish'
+
+uma outra maneira de se declarar função tambem é fazendo que ela fiquem dentro de uma variavel poderia declara o sum da seguimte maneira 
+
+var sum = function(n1,n2){
+    e colocar o codigo aqui 
+} criando uma variavel com nome sum, isso acaba dando praticamente o mesmo resultado a diferença é que estamos na de cima estamos declarando uma função chamada sum e aqui 
+estamos declarando uma varivel chamada sum que vai armazenar uma function que não tem nome ate pode dar o nome ficando var sum = function sum (n1,n2) ai sim estara 
+declarando um função sum dentro de uma variavel chamada sum mas é comum declara sem nome porem vai estar apenas armazenando um função sem nome  dentro de uma variavel 
+
+*/
+
+function sum (n1,n2){
+    var total = 0
+    for (var i = 0; i <10; i++){
+        console.log(i);
+        if(i === 2){
+            return 'finish'
+        }
+    }
+}
+
+</script> 
+
+
+</body>
+</html>

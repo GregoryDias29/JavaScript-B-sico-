@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+// 1 2 3 4 5 6 7 8 9 10 imagina o numero 5 como saber se ele é primo ele vai ser divisivel por ele mesmo todo numero divisivel por ele mesmo, então não precisa contar o numero 5 depois verifica se a divição por 4 da resto 0 por que assim tudo que for resto zero retorna falso por que se tiver qualquer outro numerom que da zero é por que ele não é um numero primo  
+   function isPrime(num){
+       for (var i = 2; i < num; i++){
+           if (num % i == 0){
+               return false;
+           }            
+
+       }return num !==1;
+   }
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*callback o que é : é como chamamos a função que sera chamda assim que uma determinada tarefa for finalizada um ex bem comum é um function do javascript chamda 
+        setTimeout ele executa uma função so depois de um certo tempo, a primeira coisa a se fazer com o setTimeout é passsar uma função para le 
+        */
+    function sum (n1,n2){
+        var total = n1+n2;
+        return total;
+    }
+
+    function con (){
+        console.log('tem nada');
+    }
+    
+    setTimeout(con, 5000)//vamos passar a função a cima para o setTimeout não se passa o () pois estamos dizendo qual a função que ele tem que executar se for passada com () vai acabar sendo executada a função 
+    // o tempo do setTimeout é contado em milesegundos 
+
+    /*função anonimas o que são: quando uma função é siplesmente declarada ela é uma function anonima e podemmos passar ela no setTimeout sem passar para nenhuma variavel sendo que precisamos nem mesmo declarar 
+    p primeiro parametro é uma função então tiramos ela e ao inves disso escrevemos*/
+    setTimeout(function(){ // aqui uma função anonima e assim poder criar qualquer codigo dentro da função 
+        conosle.log('abc')
+    }, 5000)
+    </script>
+    
+</body>
+</html>
