@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+body {
+    background-color: black;
+}
+</style>
+<script>
+
+/*Spread serve para abrir os valores de um array  */
+function sum (n1, n2){
+    return n1 +n2;
+
+}
+
+var myArray = [5,20];
+// como poderiamos fazer para passar os valores de um array para um parametro de uma função fariamos assim 
+
+console.log(sum (myArray[0], myArray[1]));// se tivesse um array qiue tivesse varios dados não seria viavel colocar a mão todos eles
+
+// uma outra maniera de fazer seria assim abrilo dentro dos parametros da função sum 
+//basta colocar o nome do array e 3 pontos 
+
+console.log (sum (...myArray));
+// no caso se quisermeos colocar mais um valor é so adicionalo que continua funcioando 
+
+function soma(n1,n2,n3){
+    return n1+ n2+n3
+}
+
+var array = [10,25,66]
+
+console.log( sum(...array))
+// outra coisa que o Sptrad pode fazer é abrir um array dentro de outro array, image que temos um array e um outro array com outro valor imagine que queira juntar os dois arrays, basta colocar os 3 potnyos 
+var a = [ 1 , 2 , 3 ]
+var b = [ 4 , 5 , 6 ]
+//[1,2,3 ...b] no Devtools 
+// [...a, ...b ] no devtools
+</script>
+<h1>Abra o console e veja a magina dos objestos </h1>
+</body>
+</html>

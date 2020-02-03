@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+h1{
+    text-align: center;
+    color: blanchedalmond;
+}
+body{
+    background: black;
+}
+</style>
+<script>
+/*uma coisa que os objetos tem de diferente dos primitivos é que eles referenciados quando jogamos em uma variavel, o que seria esta referencia 
+quando colocamos =:
+*/
+var myNumb = 5 // esta variavel vai ter valor 5 
+
+var myNumb2 = 5 // e esta vai ter tambem valor 5 
+
+myNumb === myNumb2 // se comparasmos vai ser igual mas são elementos diferentes mas quando comparadas por ter o mesmo valor retorna true 
+
+// se eu jogar vamor 10 em myNum
+var myNum = 10 
+
+myNumb2 = myNum
+
+myNum === myNumb2 
+
+// vai ser igual pois o myNum2 tem 10 de muNum 
+
+// os objetos fazem referencia quando jogamos o valor na variavel 
+//vamos ver o que acontece 
+
+var myObj = {
+    length : 15,
+    color : 'yellow',
+    write : function() {
+        console.log('hello');
+    }
+}
+// se eu criar uma variavel myObj2
+var myObj2 = myObj
+// ele consegue receber o myObj 
+//e ao chamar o myObj2 ele montra os mesmo resultados de myObj
+// agora vamos alterar o primeiro objeto
+myObj.color = 'red'
+// se vermos agora myObj tem a cor red se formos ver o myObj2 e ver o que tem nele veremos que ele tambem esta com red e não mais yellow
+
+// mas por que isso isso acontece por que quando jogamos nosso myObj para muObj2 não jogamos os valores dele o que aconteceu foi um referencia ou seja é como se o 2 fosse apenas outro nome do obj1 
+// se alterasmo em um vai alterar no segundo pelo fato deles seram  os mesmo então se alterasmos um idenpendente de qual seja sera alterado no outro 
+
+// então quando formos comparar objstos so vai retornar true se forem o mesmo obj se as duas tiverem referenciado o mesmo objeto 
+// se declaramos 2 obejtos com o mesmo valor vai dar falso, so vai ser true se eleas forem refenciadas 
+/*
+var myObj = {
+    length = 15,
+    color = 'red',
+    write =(){
+        console.log('hello');
+    }
+}
+
+varr myObj2 = myObj
+
+// true igual 
+
+var myObj = {
+    length = 15,
+    color = 'red',
+    write =(){
+        console.log('hello');
+    }
+}
+
+var myObj = {
+    length = 15,
+    color = 'red',
+    write =(){
+        console.log('hello');
+    }
+}
+
+myObj = myObj2
+// false
+
+*/
+</script>
+<h1>Abra o console para ver a comparação dos objetos</h1>    
+</body>
+</html>

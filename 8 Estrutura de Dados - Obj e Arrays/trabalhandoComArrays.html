@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+h1 {
+    text-align: center;
+    color: blanchedalmond;
+}
+
+body {
+    background: black;
+}
+</style>
+
+<script>
+/*outros tipos que não é primirtivo no javascript são os arrays arrays tambem são obejtos 
+
+temos por ex o myObj que vimos no outro html
+ */
+var myObj = {
+    length : 15,
+    color : 'yellow',
+    write() {
+        console.log('Hello')
+    }
+}
+
+/*se usarmos o typeof podemos ver que ele retorna uma string que diz objeto*/
+// vamos criar um array onde delimitamos ele com [] e os valores são separados por , 
+var myArry = [5,8,4,12];
+// se formos no consloe e colocarmos typeof myArray ele nos retorna "object"
+// arrays nada mais são que objetos tambem so que ao inves de ter as propriedades nomeadas como fizemos no myObjet  ele vai ter as propriedades numeradas 
+/*
+var MyArry = [5,8,4,12]
+              0,1,2, 3
+é assim que o arry inumera, estes numeros seram os nomes das propriedades 
+
+então no myObj se quisesimos acessa r a propriedade color faziamos assim 
+myObj.color ou myObj['color']
+
+é assim que fazemos no array então se quisermos o primeiro resultado passamo apenas o zero 
+myArray[0]
+<. 5
+se acessarmos o myArray ele retorna o objeto 
+myArray 
+> (4) [5,8,4,12]
+
+ele tmbem por padrão vai ter uma propriedade chamada de length que monstra o tamanho do array 
+
+podemos alterar tambem os valores do array basta fazer isso 
+
+*/
+myArray[0] = 7
+// se acessarmos o array vemos que a primeira posição agora é sete 
+// para pegar o ultimo elemnto do array 
+// lembrece que temos a propriedade length que monsta o tamanho do nosso array 
+// e para pegar o ultimo elemento do array podemos fazer aasim 
+myArray[myArray.length -1]
+// e pronto ele nos da o ultimo ele mento do nosso arrey 
+
+// em algus casos podemos ate tratar as strings com um array tambem por que querendo ou não 'a' isso aqui é um caracter 
+  'abcde'[2]
+// 01234  
+//"c"
+
+// string não é um objeto e sim um tipo primitivo 
+// tamto que se colocarmos o typeod 'abcde'
+// ele fala que é string 
+
+// então sempre que precisar agrupar valores e funções opte por um OBJETO mas quando precisar listar valores faça um array
+</script>
+
+
+<h1>Abra o console e vaja a magina dos Arrays</h1>
+</body>
+</html>

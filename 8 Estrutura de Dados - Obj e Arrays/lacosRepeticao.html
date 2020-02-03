@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+/* temos dois tipos de lações de repetição que trabalham com objetos que são o for in e o for of vamos primeiro declarar um array */
+var myArray = [5,10,15,20];
+/*vamos começar com o for in, ele é um for comum  a diferença esta dentro dos parenteses primeiro vamos declarar um variavel esta var vai receber cada um dos elementos a cada interação 
+*/
+
+for (var a in myArray) {
+    console.log(a);
+}
+// ele atualizou os numeros dos indisses do  meu array o in serve para interar sobre as propriedades do elemento então se quisesimos acessar cada um dos valores
+// poderiamos acessar aqui  console.log(myArray[a]) assim ele acaba imprimindo os valores e tambem podemos fazer isso com os objetos tambem 
+
+var myObj = {
+    d: 10,
+    e:20,
+    f:30
+}
+
+for (var a in myObj) {
+    console.log(myObj[a]);
+}
+
+// tambem temos o for of serve para pegar um interador  e vai imprimir os valores e não mais as propriedades 
+
+for (let a of myArray){// é mais recomendado hoje em dia usar o let  ao inves do var  usando a let ela so vai ter dentro do for se usar o var se chamar o a denovo ele vai estar com o valor 
+    console.log(a)
+}
+
+</script>
+    
+</body>
+</html>

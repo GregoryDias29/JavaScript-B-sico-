@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+h1 {
+    text-align: center;
+    color: cornsilk;
+}
+body {
+    background-color: black;
+}
+</style>
+
+<script>
+/* ou seja é uma motação de um objeto javascript, ele serve para enviar e receber dados sendo a comunicação entre cliente e servidor
+
+o Json não recebe funções ele recebe normalmente strings, numeros, outros objetos , arrays 
+
+no json as propriedades precisan ser escritas com aspas duplas 
+
+"color" : "yellow"
+
+tem uma função que conseguimos trasformar um json em uma string
+*/
+var myObj = {a:1,b:2}
+// para trasformar em string 
+JSON.stringify(myObj)
+// ele transforma em string 
+//"{"a":1, "b": 2}"
+
+// caso recebemos uma string que tenha um json la dentro podemos tranforma em objeto para que possemos cessar as propriedades e poder ler os valores 
+// pehgamos a stringfy e jogamos em uma var 
+var myStr = JSON.stringify(myObj)
+myStr
+// "{"a": 1, "b":2}"
+// para tranformar em obj 
+Json.parse(myStr)
+// {a:1,b:2}
+// .a para acessar o valor de a 
+// então quando estamos enviando dados é so lembrar que não é um obj js mais sim json
+var myObj = {
+    length : 15,
+    color: 'yellow',
+    write: function () {
+        console,log('Hello')
+    }
+}
+JSON.stringify(myObj)
+// resultado =  "{"length": 15, "color":"yellow"}"
+// ele iguinora o write por ser uma function 
+</script>
+
+<h1>Abra o console e veja a magia do JSON</h1>
+<h1>Json = JavaScript Object Notation</h1>
+</body>
+</html>

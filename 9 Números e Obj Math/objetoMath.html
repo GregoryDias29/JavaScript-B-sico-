@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+/* nos ajuda a trabalhar com calculos,*/
+Math.pow(2, 3) //= 8 = elevar ao cubo ele é igual ao **
+
+Math.sqrt(9) //= 3 raiz quadrada 
+
+Math.abs(5.3515) //= 5.3515 pegar valor absoluto de um numero
+
+Math.abs(-5.3515) // = 5.3515 o valor absoluto sempre vai negar o sinal 
+
+Math.ceil(5.9)  //= 6 arredonda o numero 
+
+Math.ceil(5.1) // = 6 sempre arredonda para cima 
+
+Math.floor(5.1) //= 5 arredonda para baixo 
+
+Math.floor (5.9)  // = 5 sempre para baixo 
+
+Math.round(5.9) // = 6
+
+Math.round(5.1) // = 5 arredonda para o numero mais proximo 
+
+Math.trunc(5.9) // = 5
+
+Math.trunc(5.1) // = 5 ele pega apenas a parte inteira do numero 
+
+Math.max(5,2,6,8,80,90,100)  //100 ele pega o maior numero 
+
+Math.min(5,2,6,8,80,90,100)  // 2 ele pega o menor numero 
+
+/*imaginemos que temos um array com varios numero e queremos saber o menor numero deste array*/
+
+var array = [1,2,3,4,5,6,78,9,45,21,11,2222,3545654,994941,113132,0,1212,2851,9784,515151]
+
+Math.min(...array)
+//1
+
+Math.random()// ele sempre vai retornar entre 0 e 1 então vai sempre retornar um numero quebrado 
+/* mas se quisermos um numero entre 1 e 10  */
+
+Math.random() * 10
+
+// mas se quisermos que comece em 1 
+
+(Math.random() * 10) + 1
+
+// mas queromos um numero inteiro
+
+Math.trunc((Math.random() * 10) + 1)
+
+</script>
+    
+</body>
+</html>

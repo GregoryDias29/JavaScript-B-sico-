@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*faça um objeto chamado de elevador e criar as funções para ele subir e descer e no console deve se imprimir qual o andar atual dele  
+
+obs ele não pode ir para andar negativo e tem que ter um total de 3 andares não podendo ir para o andar 4 */
+
+var elevador = {//criei uma variavel elevador 
+    floor : 0,// e coloquei o andar atual em que estamos 
+    total : 3, // e digo que o total é de 3 
+    up(){
+        if (this.floor < this.total){// no lugar de this podia ser elevador
+            this.floor++;
+        }
+        this.print();
+    },
+    down(){
+        if(this.floor > this.total){
+        this.floor--
+        }
+        this.print()
+    
+
+    },
+    print() {// então foi criado uma função chamada de print que serve para imprimir o andar atual 
+        console.log(`Andar : ${this.floor}`);
+    }    
+}
+
+elevador.print();
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+body {
+    background-color: black;
+}
+</style>
+<script>
+/* objeto literal é chamado assim por que criamos direto no codigo com assim, bom quando criamos um valor poderiamos criar o numero 5 chamariamos a função number e 
+ai passariamos o numero 5 mas uma forma de escrever ele de uma forma literal seria escrevendo o numero 5 direto e é isso que sera feito com o objeto vamos escrever 
+ele direto.
+
+como um objeto é criado, são criados com chaves e vamos armazenalo dentro de uma variavel para poder acessar depois por que se jogar dentro {disso } não conseguiremos mais acessalos
+ele não tera mais uma referença da mesma forma que jogarmos o numero 10 no console não conseguiremos mais acessalo so se armazenamos dentro de uma variavel var numb = 10 
+
+então vamos criar uma variavel chamada de myObj temos então as chaves que são os marcadores que vão definir o inicio e o fim de um objeto 
+
+dentro podemos escrever as propriedades dos obejtos estas propriedade são  valores como se fossem variaveis ou funções vamos finger que estamos trabalnhando com o lapis
+
+dentro do objeto aoinves de usarmos o = usamos : 
+
+não fecha com ; por que estamos listando as propriedades então é , 
+
+como fazemos para acessar estas propriedades de dentro do objeto 
+
+basta chamarmos a variavel e colocar um . e o nome da propriedade que quisermos
+*/
+
+var myObj = {
+    length: 15,
+    color: 'yellow',
+    write: function(){
+        console.log('Hello');
+    }
+}
+
+myObj.color // retorna o valor da cor 
+myObj.length // retorna o 15
+my.write()// retorna o hello como toda funtion quando queremos pegar o valor dela basta passar os () 
+
+/*
+uma otra meneira de acessar as propriedades é com a seguinte sitax é 
+acessamos o objeto:
+myObj[] abrir colchetes e dentro dos colchetes passamos uma string 
+e vai ter o mesmo efeito 
+*/
+
+myObj['color']
+/*porem o mais comum é usar . e o nome da propriedade 
+a vantagem de usar [] esta sintax é que como estamos usando string poderiamos criar uma variavel para poder acessar um propriedade dinamicamente 
+ex:
+*/
+var prop = 'color'; //criamos uma variavel  e damos o nome de color
+
+myObj[prop] //e dentro dos colchets passamos a var que criamos com o valor de color o resultado é a cor do objeto que criamos
+
+prop = 'write'
+
+myObj[prop] // vai retornar a função para a gente
+// se quisermos execitar basta colocar os () na frente 
+myObj[prop]()
+// Hello
+
+// para alterar um valor de uma propriedade basta imaginar que estamos trabalhando com variaveis comuns vamos aceesar o myObj.length
+// aqui ele retorna 15 
+myObj.length
+// para alterar o valor 
+myObj.length = 20
+// foi alterado na hora de acessar vemos que o valor mudou 
+myObj.length //== 20
+myObj
+
+// para  apagar um valor de um objeto podemos usar o operador delete e passamos o objeto.o nome da propriedade se der tudo certo ele passa true 
+delete myObj.color
+
+// se mandarmos imprimir o obejto de novo 
+myObj
+//{length: 20, write: f}
+// com a nova versão do JStemos uma novo modo de escrever um funtion
+var obj = {
+    length : 20,
+    color : black,
+    write(){
+        console.log('Novo modo da function');
+    }
+}
+
+// tambem podemos escrever como um arrow function 
+
+var arrow = {
+    length : 20,
+    color : 'red',
+    write : () => {
+        console.log('Com arrow Function')
+    }
+}
+
+// podemos tambem adicionar propriedades novas no objetos 
+
+myObj.number = 3
+// ele acaba sendo inserido dinamicamente antes não tinha a propriedade number e agora ao acessar o objeto temos 
+myObj
+//{length: 15, color: 'yellow',number: 3, write: f}
+
+// no caso não tem problema criar variaveis com mesmo nome em obejetos diferentes por que cada uma é uma coisa 
+
+</script>
+<h1>Abra o console e veja a magina dos objestos </h1>
+</body>
+</html>

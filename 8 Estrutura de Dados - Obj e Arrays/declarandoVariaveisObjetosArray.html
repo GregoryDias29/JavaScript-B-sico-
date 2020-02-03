@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+h1 {
+    text-align: center;
+    color: blanchedalmond;
+}
+body{
+    background: black;
+}
+</style>
+
+<script>
+/*imagine que temos o nosso array que tem seus valores e faz de conta que queremos declara q um var que  receba o valor deste array*/
+var myArray = [2,4,6];
+
+var a = myArray[0],
+    b = myArray[1],
+    c = myArray[2];
+// para pegar um valor de um array, vai ser a mesma coisa que este de cima so que muito mais fazer
+var [a,b,c] = myArray // ou [0,1,2] 
+// vamos imaginar que temos a mesma coisa para objetos
+
+var myObj = {d: 5, e: 10, f: 15}
+
+var d = myObj.d,
+    e = myObj.e,
+    f = myObj.f;
+// para objetos tambem temos um atalho 
+var {d,e,f} = myObj; // neste caso a variavel tem que ter o mesmo nome que o objeto 
+</script>   
+
+<h1>Abra o console para ver a magia das declarações das variaveis - Objetos e Arrays</h1>
+</body>
+</html>

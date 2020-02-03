@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*recebe um lista de numeros e indica qual é o menor */
+function min(numbers) {// chamos nossa func de mim e ela recebe um array com nome de numbers
+    var min = numbers[0]; // criei uma variavel chamada de min e ela inicia com algum numero vamos colocar o primeiro numero da lista que esta na posição 0 não importa qual seja o numero é apenas para iniciar nosso calculo 
+    for(var i = 0; i < numbers.length; i++){ // fiz um for para andar pelo array, inicio com uma variavel i que é igual a 0 e este i vai ate o tamanho da lista que esta na propriedade length e o i vai aumentando em 1 em 1  
+        if(numbers[i] < min){// então aqui é verificado se numbers na posição i ou seja que estamos olhando naquele momento se ele é menor que o numero que guardamos da var min se for menor opa é um novo numero que temos que guardar então é ele que é o menor  
+            min = numbers[i];// então min é igual a numbers da posição i e com isso atulizamos a var min 
+        }
+
+    }    
+    return min;// e por fim damos return min 
+}
+
+// no console DevTools escremos assim min([4,5,6,7,8,9,11,2,4,57,9,9,7989,7898,89])
+//ao executar ele fala qual é o menor nuemro 
+
+</script>
+</body>
+</html>
