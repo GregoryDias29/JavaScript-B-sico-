@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/* vamos supor que temos uma string com nome de var myStr e ea tem uma data, como saber se isso é realmente uma data */
+
+var myStr = '05/10/2020' // queremos fazer isso 
+/*
+// expreção regular são delimitadas por duas barras 
+
+ /adad/ mas quando escrevermos ele vai ver que não é um comentario 
+
+/d/ como foi dito o d é para ser indicado um digito numerico então ele não acieita letras porem se colocarmos apenas d ele vai achar que estamos procurando a letra d então 
+
+/\d/ usamos a barra invertida para utilizar como escap 
+
+para não precisar colocar 2 vezes o /d/d basta fazer assim
+
+/\d{2}/assim ja indica que esperamos 2 numeros 
+
+podemos colocar tambem ate quantos valores minimos e maximos podemos aceitar 
+
+se quero colocar entr 2 e 5 digitos posso fazer assim 
+
+/\d{2,5}/ então ele não vai ceitar 1 digito pois tem que ser mais que 2 e não vai aceitar 6 digitos por que passa o 5 
+
+mas no nosso caso colocaremos 
+
+/\d{2}/
+
+queremos colocar / porem / [e o mesmo para fechar ]
+
+/\d{2}\// como agora queremos o mes vamos colocar de novo  d
+
+/\d{2}\/\d{2}/
+
+/\d{2}\/\d{2}/\/\d{4}/
+
+então como fariamos
+
+pegariamos a nossa string e usariamos a expressão match 
+
+poderiamos ate declarar um varivel para armazer nosso regex
+*/
+var myRegexDay = /\d{2}\/\d{2}\/\d{5}/;
+myStr.match(myRegexDay)
+</script>
+</body>
+</html>
