@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*vou declarar meu array com alguns valores */
+var myArray = [2,4,6,8,10]
+
+myArray.length // descobrir quantos elementos tem 
+
+/*array uma lista de elemetnos*/
+
+//temos a função everi para ver se todos os elementos batem com uma condição, por exemplo no array so tenho numeros pares 
+// então façõ assim, pego meu array 
+myArray
+// chamo a funão every
+/*myArray.every(function(n){// vamos fazer uma função de callback/ esta função vai receber um numero coloquei uma variavel n este ano a cada interação vai ser cada um dos numero
+   return n % 2 == 0//pegamos o numero fazemos % 2 para pegar o resto da divizão e todo numero par dividido por 2 tem o resto dividio por 0
+})*/
+myArray.every(n => n % 2 == 0) // podemo susar as arrowfunction como é apenas uma linha dispença o return e as chaves 
+
+//retorna tru por que deu tudo certo se colocasse um 11 dava falso 
+
+// serve para fazermos um filtro no array 
+var myArray = [2,4,6,8,10,1,3,5,7,9,11];// eu quero apenas os elemntos impares 
+myArray.filter (n => n% 2 !== 0)
+
+// e dentro () passo uma função para efetuar o teste 
+
+
+// o find tambem temos que passsar uma condição então quero os numeros que sejam maiores que 5 e ele retorna o primeiro que ele encontra o find so encontra o primeiro ele não retorna todos os elementos que batem na descrição
+
+var myArray = [2,4,5,6,8,10,1,3,5,7,9,11];
+myArray.find(n=> n > 5)
+
+// tambem temos o findIndex  ao inves de retornar o elemento ele retorna o indice do elemento ou seja ee retorna o indice do 6 
+
+var myArray = [2,4,5,6,8,10,1,3,5,7,9,11];
+myArray.findIndex(n=> n > 5)
+
+// assim como temos a every que bate se todos os elementos batem com a condição nos tambem temos a some que verifica se pelo menos uma bate com a condição 
+
+var myArray = [2,4,6,8,10,11];
+myArray.some(n => n % 2 !==0)
+
+// ele retor true por que pelo menos um bate com a condição 
+
+// temos esta condição que serve para reduzir os valores 
+
+var myArray = [1,2,3];// = 6
+myArray.reduce((acumulado, atual ) => acumulado + atual )//recebe dois valores o primeiro vai ser o valor acumulativo e o proximo valor que é o valor atual da nossa interação i pegamos o acumulado  + atual então estamos retornando  o acumulado + atual 
+
+//temos a função sort serve para ordenar 
+var myArray = [8,2,15,10,4,6];
+myArray.sort() // ele corverte cada elemento para uma string 1 vem antes de 2  então por isso ele deixou o 10 e 15 na frente então para evitar passamos uma função para dizer a logica que queremos seguir 
+
+var myArray = [8,2,15,10,4,6];
+myArray.sort((a,b) => a > b ? 1 : -1)// ele revebe sempre 2 numeros que são os dois numeros que ele usa para comparar se o nuemro a for menor tem que retornar -1 para indicar que ele é menor se for mairo que o segundo vc tem que retonr 1 se for igual retorna 0
+// se passar ao contrario ele faz de tras para frente 
+
+// uma putra muito importante é o for each ele basicamente é um loop que pega cada um dos elementos 
+
+var myArray = [1,2,3];
+myArray.forEach(n => {// isso é mais para quando queremos trabalhar com cada um dos valores 
+    console.log(n)// ele executou o console log para cada um dos elementos do array
+})//passamos um função 
+
+/*caso queria alterar cada uma dos valores então usamos map vamos dizer que queremos o dobro de cada um dos valores*/
+
+var myArray = [1,2,3];
+myArray.map(n => n*2)// chamaria o map recebemos n e retornamos n * 2
+
+</script>
+
+    
+</body>
+</html>

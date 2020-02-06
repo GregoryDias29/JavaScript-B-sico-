@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+   /*vamos trabalhar com data 
+   
+   utilizamos o metodo contrutor date()
+
+   temos que pegar a data atual sendoa ssim usamos 
+
+   new Date()
+
+   então temos que armazenar em uma variavel 
+
+
+
+   */ 
+    var myDate = new Data() // podemos passar um string que é uma data que queremos, por exemplo  um data que não esta aqui, passariamos assum ('2020-09-21')
+    /* veio dia 20 porq que ele cria em relação ao gmt como br ta 3 h atrasado ele acaba descontando 3 h quando criar com uma str sempre bom colocar horario
+    
+    tambem podemos criar com ano mes dia e horario ai passamos como numero (2020,9,21) porem ele veio como outubro, então janeiro seria 0 o mes 9 seria outubro por que ele começa em 0
+    
+    */
+
+    var minhaData = new Date(2020,2,21)
+
+    minhaData.getMilliseconds()
+
+    minhaData.getSeconds()
+
+    minhaData.getMinutes()
+
+    minhaData.getHours()
+
+    minhaData.getDate()
+
+    minhaData.getMonth()
+
+    minhaData.getFullYear()
+
+    minhaData.getDay() // vão de 0 a 6 dias da semana
+
+// da mesma forma que temos o get para pegar temos o set para atribuir valor 
+minhaData
+
+minhaData.setMonth(8)
+
+minhaData
+
+minhaData.getTime() // as datas seguem um padrão então o numero queaparece são os milesegundos 160065720000 desde jan de 19..
+
+new date(160065720000) // outro jeito de criar 
+
+minhaData.toJSON()
+
+
+    
+    
+</script>
+</body>
+</html>
