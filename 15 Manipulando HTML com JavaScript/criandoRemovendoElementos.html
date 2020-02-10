@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<style>
+body{
+    background-color: black;
+    color: azure;
+}
+</style>
+<script>
+// remover é muito simples basta acessar o elemento 
+document.querySelector('input')
+// quando acessado basta usar o remove
+document.querySelector('input').remove()
+//para criar um elemento usamos o document creat 
+var myLI = document.createElement('li')//ele cria porem ele não cria no documento mas sim na memoria 
+
+myLI.innerText = 'Treina Web'
+
+myLI
+
+//colocar um elemento dentro de outro elemento 
+
+document.querySelector('div')
+
+document.querySelector('div').appendChild(myLI)
+
+//antes de outro elemento que esta selecionado 
+
+document.querySelector('.list-item:first-child').insertAdjacentHTML('beforebegin',myLI.outerHTML)// antes mas esta função não vai esperar o elemento em si ela vai esperar um string vai retornar o html em forma de string 
+
+//colocar depois 
+
+document.querySelector('.list-item').insertAdjacentHTML('afterrend',myLI.outerHTML)
+
+document.querySelector('ul').appendChild(myLI)// ele insere no final ,
+
+document.querySelector('ul').insertBefore(myLI, // passamos o elemento e temos que indicar qual é o primeiro filho do elemenro 
+document.querySelector('ul').firstChild)// vai retornar o priemrio elemento 
+
+/*sempre armazenar é melor por que o DOM é muito lento*/
+
+// clonar elemtno 
+
+document.querySelector('#myInput').cloneNode(true)
+
+
+</script>
+<div></div>
+
+<input type="text" id="myInput">
+<button>Click Me</button>
+
+<ul>
+    <li class="list-item"> Item 1 </li>
+    <li class="list-item"> Item 2 </li>
+    <li class="list-item"> Item 3 </li>
+</ul>
+</body>
+</html>

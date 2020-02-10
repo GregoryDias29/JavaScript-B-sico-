@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<style>
+body{
+    background-color: black;
+    color: azure;
+}
+</style>
+<script>
+//valores e atributos dos elementos 
+//quanto temos o campo input temos o value 
+document.querySelector('#myInput').value 
+
+document.querySelector('#myInput').value = 123 // se colocar algo acabamos alterando o valor do nosso imput 
+
+document.querySelector('#myInput').getAttribute('type') // indica que é texto 
+
+document.querySelector('#myInput').setAttribute('type', 'number') // coloca o atual e modifica para o novo apaertir da vorguça 
+
+document.querySelector('#myInput').setAttribute('type','radio') // viro um checbox 
+
+//queiser trabalar com as classes do css
+
+document.querySelector('#myInput').classList.add('my-input') // retorna uma lista de class que temos no elemento, com .add podemos adicionar uma class ao elemento 
+
+// se um elemento possui uma class 
+
+document.querySelector('#myInput').classList.contains('list-item') // false ele informa se tem com true e false 
+
+//temos tamebm a função de remover a class
+
+document.querySelector('#myInput').classList.remove('my-input')//remove a class adicionada 
+
+// inserir quando não tem e remover quando tem 
+
+document.querySelector('#myInput').classList.toggle('my-input')//se executar ele insere ou remove a class ele inver 
+
+// se quiser alterar um estilo de um elemento 
+
+document.querySelector('#myInput').style// vai ter todas as propriedades css 
+//no javascript não da para ter nomes separados por - no caso como no css tem fazemos o seguinte iguinoramos o - e colocamos a proxima letra maiuscula 
+document.querySelector('#myInput').style.backgroundColor = 'black'
+
+
+
+</script>
+<div></div>
+
+<input type="text" id="myInput">
+<button>Click Me</button>
+
+<ul>
+    <li class="list-item"> Item 1 </li>
+    <li class="list-item"> Item 2 </li>
+    <li class="list-item"> Item 3 </li>
+</ul>
+</body>
+</html>

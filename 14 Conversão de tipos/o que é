@@ -1,0 +1,16 @@
+O que é?
+Já falamos antes da Conversão de Tipos. Fazemos conversões quando precisamos pegar um valor e trabalhar como se ele fosse de outro tipo.
+
+Um exemplo é quando pedimos uma data para o usuário. Receberemos uma String, como: "01/01/2000". E se quisermos calcular quantos dias existem entre essa data e "15/03/2020"? Cálculos só podem ser feitos com números. Temos então que pegar os dias, meses e anos da String e converter cada um deles para Number.
+
+Quando misturamos tipos diferentes em operações, como somar a string "5" com o número 3, linguagens de programação como Java, C#, Ruby e Python normalmente exibem um erro. Quando isso ocorre dizemos que essa linguagem é "Fortemente Tipada", ou que é uma linguagem de "Tipagem Forte".
+
+O JavaScript tenta fazer uma conversão automática para tentar fazer a operação. Isso pode deixar a linguagem mais dinâmica, mas ao mesmo tempo pode fazer com que comportamentos inesperados ocorram. O PHP também possui esse comportamento, e chamamos de "Tipagem Fraca".
+
+Não pense nas palavras "Fraca" e "Forte" em seu significado literal. "Forte" não significa necessariamente melhor do que "Fraca". Muitas pessoas criticam as linguagens de tipagem fraca, mas esse comportamento dá mais flexibilidade na hora de criarmos soluções com nossos códigos, melhora a velocidade de desenvolvimento e facilita o aprendizado de desenvolvedores iniciantes.
+
+A desvantagem é que, pela maior liberdade, pessoas com pouco conhecimento podem acabar criando códigos com comportamentos inconsistentes, passíveis de vários erros. Por não ter certeza de um tipo de variável, pode ser mais difícil de entender algum código.
+
+Dica
+Dica
+Cada característica sempre vai possuir vantagens e desvantagens. Se alguém te disser que apenas X presta, provavelmente essa pessoa não possui conhecimento o suficiente de Y e Z.

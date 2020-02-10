@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*pegar a função das letras faltando e melhorar */
+
+function missingLetters(text){
+    var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','x','y','z']; // criamos um array ao inves de usar objeto 
+    text = text.toLowerCase(); // para não diferenciar letras aiusculas de minusculas 
+    var missing = [];
+    for(let letter of letters){ // pegamos cafda uma das letras e então pegamos o texto e passamo a letra, se aletra for -1 significa que el não esta no testo
+        if(text.indecOf(letter) === -1){
+            missing.push(letter);
+        }
+
+    }
+    return missing;
+}
+
+
+
+
+</script>
+</body>
+</html>

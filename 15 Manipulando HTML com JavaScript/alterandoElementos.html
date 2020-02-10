@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<style>
+body{
+    background-color: black;
+    color: azure;
+}
+</style>
+<script>
+//vamos alterar os elementos 
+
+//vamos tentar acessar o lista
+
+var a = document.querySelector('.list-item')// vamos armazenar ele 
+
+//para acessar o conteudo texto de um elemento usamos a propriedade textContent
+document.querySelector('.list-item').textContent // ele retorna = "Item 1" e podemos alterar o valor dele
+document.querySelector('.list-item').textContent = 'Treina Web' // e com isso ele altera o conteudo de texto do elemento 
+//podemos alterar o html 
+document.querySelector('.list-item').innerHTML = '<b>abc</b>' // acessamos o html em si ele retorna o que tem dentro dele 
+document.querySelector('.list-item').outerHTML // se quisermos pegar o elemtno junto "<li class="list-item"><b>abc</b></li>"
+
+</script>
+<div></div>
+
+<input type="text" id="myInput">
+<button>Click Me</button>
+
+<ul>
+    <li class="list-item"> Item 1 </li>
+    <li class="list-item"> Item 2 </li>
+    <li class="list-item"> Item 3 </li>
+</ul>
+</body>
+</html>

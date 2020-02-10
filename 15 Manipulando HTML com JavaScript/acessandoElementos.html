@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<style>
+body{
+    background-color: black;
+    color: cornsilk;
+}
+
+</style>
+
+
+<script>
+// document = nossa pagina ele tem algumas funçoes, ele é um dos objetos do navegador que tem em um navegador no servidor não tem document, podemos acessar os elemntos pelo nome deles 
+document.getElementsByTagName('button')// ele retorna uma lista com os botoes 
+
+document.getElementById('myInput') // ele retorna o elemento direto 
+
+document.getElementsByClassName('list-item')// elements esta no plural pois pode ter mais de um 
+
+//seletor parecido com css 
+
+document.querySelector('button')//passsamos um selector igual ao css ele retorna apenas um elemento o primeiro que ele encontrar ele retorna
+
+document.querySelectorAll('li')// ele retorna tudo que tem em formato de lista
+
+//selector são igual ao do css #ID , .CLASS , 'TAGS'
+
+document.querySelectorAll('li:first-child') // apenas o primeiro elemento 
+
+document.querySelectorAll('li:last-child')// para pegar o ultimo
+
+
+    
+</script>
+    
+<div></div>
+
+<input type="text" id="myInput">
+<button>Click Me</button>
+
+<ul>
+    <li class="list-item" >Item 1 </li>
+    <li class="list-item" >Item 2 </li>
+    <li class="list-item" >Item 3 </li>
+</ul>
+
+
+</body>
+</html>

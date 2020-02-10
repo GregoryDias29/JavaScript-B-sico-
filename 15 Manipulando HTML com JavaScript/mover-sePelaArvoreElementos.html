@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<style>
+body{
+    background-color: black;
+    color: azure;
+}
+</style>
+<script>
+//primeiro vamos selecionar no ul 
+document.querySelector('ul')
+//para pegar o sfilhos usamos o children
+document.querySelector('ul').children
+//vamos ter a lista com os filhos do elemnto 
+//podemo stambem usar outro seletor 
+document.querySelector('ul').querySelectorAll('li')// não vai ser no documento interio mas sim no ul a vantagem é caos tenha um li no codigo ele vai iguinorar pois ele vai qierer so os que estão dentro de ul 
+//peagr o segundo elento
+var el = document.querySelector('ul').querySelectorAll('li')[1]//pegou o item 2 
+el 
+// se quiser pegar o elemnto pai que seria o ul 
+
+el.parentElement// a partir do elemento pegar o pai dele 
+
+//elemento seguinte 
+el.nextElementSibling// proximo 
+//item 3 
+el.previousElementSibling //anterios 
+//item 
+
+
+</script>
+<div></div>
+
+<input type="text" id="myInput">
+<button>Click Me</button>
+
+<ul>
+    <li class="list-item"> Item 1 </li>
+    <li class="list-item"> Item 2 </li>
+    <li class="list-item"> Item 3 </li>
+</ul>
+</body>
+</html>

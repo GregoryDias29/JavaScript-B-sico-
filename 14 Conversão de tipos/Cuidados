@@ -1,0 +1,19 @@
+Cuidados
+Quando usamos o operador "-" com um número e uma string, a string será convertida para número e uma subtração será feita.
+
+Vimos anteriormente que o operador "+" serve tanto para soma quanto para concatenação de Strings.
+
+Quando usamos o "+" com um número e uma string, o número é convertido para string e é feita uma concatenação.
+
+Isso significa que qualquer valor que usarmos com "+" e uma String serão convertidos para String.
+
+Porém, se usarmos o "+" com uma string sozinha, o JavaScript irá tentar converter essa string para um número
+
+Se somarmos dois Arrays, eles serão transformados em Strings e serão concatenados também.
+
+Muitas outras conversões podem ocorrer automaticamente. Uma comparação curiosa é a seguinte:
+
+Lembre-se que a comparação com "==", diferente da "===", não leva em conta o tipo do valor. Antes de comparar, o Array acaba expondo o valor do número que está em seu interior, resultando em uma comparação "3 == 3", que acaba retornando true.
+
+Isso também ocorre com outros tipos de valores:
+

@@ -1,0 +1,25 @@
+Conversão de Tipos
+Para evitar problemas e comportamentos inesperados, prefira não deixar que o JavaScript converta os valores automaticamente.
+
+Converta os tipos explicitamente. Para isso, temos funções que fazem a conversão.
+
+Convertendo Valores para String
+Para converter valores para Strings, passe o valor para a função String().
+
+Esses valores também possuem o método "toString()", que faz o mesmo. Seu uso é mais comum, já que o nome deixa mais explícito que está sendo feita uma conversão.
+
+Dica
+Dica
+Prefira estes métodos ao invés de usar + para fazer uma conversão para String.
+
+Convertendo Valores para Number
+Assim como a função String(), também temos a função Number().
+
+Também temos as funções parseInt(), que transforma uma String para um número inteiro, e parseFloat(), que transforma uma String para um número com casas decimais.
+
+Dica
+Dica
+Prefira estes métodos ao invés de usar + para fazer uma conversão para Number.
+
+A conversão entre String e Number é a mais comum, mas também temos outras como Boolean(), Array(), Function(), RegExp(), Date(), Error() e Symbol().
+

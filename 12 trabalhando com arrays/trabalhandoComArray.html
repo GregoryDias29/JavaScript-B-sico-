@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*para cruiar um array*/
+
+var myArray = [1,2,3];
+
+/*utilizando o metodo de contrutor*/
+
+var myArray2 = Array(1,2,3); // porem esta forma tem um certo perigo se escrevermos Array(1,2) ele forma um array com numeros 1 e 2 se colocarmos Array(5, 7) ele forma um array com 5 e 7
+// mas se colocarmos apenas o numero 5 ele não vai criar um array com apenas o numero 5 mais sim um array com 5 posições porem sem elemento e valor nenhum e isso pode causar incosistencias 
+
+// então quando for criar desta maneira é bom utilizar a função of
+
+Array.of(1,2,3)
+
+Array.of(3) // ele cria so com o 3 
+
+// ou literal
+[3]
+
+// para concatenar podemos utilizar da seguinte forma
+
+myArray.concat(myArray2)
+//6 [1,2,3,1,2,3]
+
+// indica se o array inclui o que eu passar 
+myArray.includes(3);
+// true
+myArray.includes(5);
+//false
+
+myArray.indexOf(3)
+//2 é a posição em que ele está caso nção tenha ele vai retornar -1 e se tiver um repetido(ele vai monstrar o primeiro que ele encontrar se eu quiser saber o ultimo )
+myArray.lastIndexOf(5)
+
+//se eu quiser juntar todos em uma estring 
+myArray2.join('')
+// 1 2 3
+
+myArray2.join('-')
+//1-2-3
+
+'abc'.split()
+//["abc"]
+
+'abc'.split('')// para quebrar 
+["a","b","c"]
+
+'abc'.split('').join('-')
+"a-b-c"
+
+//para inverter todos os elementos de um array
+
+[1,2,3].reverse()
+[3,2,1]
+
+
+'abc'.split('').reverse().join()
+"cba"
+
+// incerir um item novo no final 
+
+myArray
+myArray.push('asfd') // vai incerir o elemento no final do array
+
+//remover o elemento do final 
+
+myArray.pop() // ele remove o elemento 
+
+// para inverir um elemento no começo do Array
+
+myArray.unshift('aaaaaa')
+
+//para remover o primeiro 
+myArray.shift()
+
+// remover do meio
+// myArray = [1,2,3] e quero remover o numero 2
+myArray.splice(1,1)// especificamos a posição do indice  e quantos elemento queremos remover
+
+// tambem podemos incerir elementos ali no meio 
+
+// quero incerir no meio do indice 4
+// myArray = [1,2,3,4,5]
+
+myArray.splice(2,0,'aaaa') // fala qual é a pocição que queromos, 0 por que não quermos apagar nada, 'aaa' por que foi o que foi incerido 
+
+// pegar um substring
+// myArray = [1,2,3,4,5]
+myArray.slice(1,4)//pegar a substring da string indicamos qual o indice que queremos começar vamos dizer que quero pegar do 2 at o 4 então passamos assim 
+// 1,4 o ultimo indice que  passamos ele encerra então não é pego 
+
+</script>
+</body>
+</html>
