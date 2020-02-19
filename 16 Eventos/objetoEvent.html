@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<style>
+body{
+    background-color: black;
+    color: cornsilk;
+}
+
+</style>
+
+
+<script>
+document.querySelectorAll('input').addEventListener('click',
+function(event){
+    console.log(event);
+})
+
+document.querySelectorAll('input').addEventListener('keyup',
+function(event){
+    console.log(event);
+})
+
+//ele imprime o evento tipo mouseEvent
+
+
+document.querySelectorAll('input').addEventListener('keyup',
+function(event){
+    if(event.keyCode == 13){
+       console.log(this.value)  
+    }//quando precionar enter ele apresentara o qur fi escrito no input
+})
+
+document.querySelectorAll('input').addEventListener('keyup',
+function(event){
+    if(this.value !== ''){
+        this.style.backgroundColor = 'green'; 
+    }else{
+        this.style.backgroundColor = 'red';
+    }
+})// se ele estiver vazio vai ficar vermelho senão ele ficara verde assim que apertar enter
+    
+</script>
+    
+<div></div>
+
+<input type="text" id="myInput">
+<button>Click Me</button>
+
+<ul>
+    <li class="list-item" >Item 1 </li>
+    <li class="list-item" >Item 2 </li>
+    <li class="list-item" >Item 3 </li>
+</ul>
+
+
+</body>
+</html>

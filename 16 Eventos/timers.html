@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<style>
+body{
+    background-color: black;
+    color: cornsilk;
+}
+
+</style>
+
+
+<script>
+//timers são funções que depois de ums erto periodo ela é executada 
+
+setTimeout(function(){
+    console.log(5555)
+}, 2000)
+
+
+//cancelar o settimeout
+
+var myTimeout = setTimeout(function(){
+    console.log(5555)
+}, 2000)
+
+clearTimeout(myTimeout)// ele cancelou 
+
+//se quiser ficar repetindo
+
+var myinterval = setInterval(function(){
+    console.log(5555)
+}, 2000)
+
+clearTimeout(myTimeout)
+
+// e da mesma forma temos o cancelar intervor 
+
+clearInterval(myinterval)
+
+// ele para de imprimri 
+
+//lebrando que o time out executa apenas uma vez, por isso o intervel 
+
+
+</script>
+
+
+    
+<div></div>
+
+<input type="text" id="myInput">
+<button>Click Me</button>
+
+<ul>
+    <li class="list-item" >Item 1 </li>
+    <li class="list-item" >Item 2 </li>
+    <li class="list-item" >Item 3 </li>
+</ul>
+
+
+</body>
+</html>

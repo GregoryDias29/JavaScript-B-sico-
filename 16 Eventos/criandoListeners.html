@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<style>
+body{
+    background-color: black;
+    color: cornsilk;
+}
+
+</style>
+
+
+<script>
+// quando queremos tralhar co m evento, riamos um listerners 
+
+//temos o input vamos acessar 
+
+document.querySelector('#myInput').addEventListener('click',function(){
+    conosle.log('elemento clicado')
+})
+
+var myFunc = function(){console.log('my click')} // primeiro vamos criar a function para que ela deixe de ser anonima
+
+document.querySelector('#myInput').addEventListener('click',myFunc)//adicionar um evento ao botão input 
+
+document.querySelector('#myInput').removeEventListener('click',myFunc)// removemos a function do evento input 
+
+document.querySelector('#myInput').addEventListener('keyup',function(){console.log(this.value)})//quando atecla do teclado é solta - o this vai estar indicando o elemento selecionado  os input por padrão tem o value 
+
+    
+</script>
+    
+<div></div>
+
+<input type="text" id="myInput">
+<button>Click Me</button>
+
+<ul>
+    <li class="list-item" >Item 1 </li>
+    <li class="list-item" >Item 2 </li>
+    <li class="list-item" >Item 3 </li>
+</ul>
+
+
+</body>
+</html>

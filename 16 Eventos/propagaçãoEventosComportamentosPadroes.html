@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<style>
+body{
+    background-color: black;
+    color: cornsilk;
+}
+
+</style>
+
+
+<script>
+// seria se tivermos lisiner tanto no pai quanto no filho o evento sera disparado para os dois 
+
+document.querySelector('ul').addEventListener('click', function(){
+    console.log(this)// elemento que estamos selecionanodo uou sehja ul 
+}) // selecionei o ul ao clicar em ul estamos clicando tamebm nos li
+ //vamos colocar um listerner no item 1
+
+document.querySelector('li').addEventListener('click',
+function(){
+    console.log(this)// se clicar no 3 so ul, mas se clicar no item 1 ele dispara o evento de click e dispara o evento de ul
+})
+
+//pode ser que vc não quer que este evento ocorra pode ser que vc click no pai faça uma ação e no filho outra
+
+//para evitaragente evita a propagação 
+
+document.querySelector('ul').addEventListener('click',
+function(){
+    console.log(this)
+})
+
+document.querySelector('li').addEventListener('click',
+function(event){//na hora de colocar no li faremos o seguinte, a função receber por padrão oevent que contem todas a sinformações do evento que esta ocorrendo 
+// o evente tem um função chamada stopPropage ele evita a propagação 
+    event.stopPropagation()
+    console.log(this)
+})
+
+
+// quando clicar em um botão de formulario ele envia automaticamente 
+document.querySelector('form').addEventListener('submit',
+function(event){//na hora de colocar no li faremos o seguinte, a função receber por padrão oevent que contem todas a sinformações do evento que esta ocorrendo 
+// o evente tem um função chamada stopPropage ele evita a propagação 
+    event.preventDefault()//não quer que o usuario click com o botão direito
+    console.log(this)
+})
+// quando clicar com o botão direoto sobre o botão é para evitar o comportamento padrão 
+document.querySelectorAll('button').addEventListener('contextmenu',
+function(event){
+    event.preventDefault();
+    console.log(this);
+})
+
+</script>
+    
+<div></div>
+
+<input type="text" id="myInput">
+<button>Click Me</button>
+
+<ul>
+    <li class="list-item" >Item 1 </li>
+    <li class="list-item" >Item 2 </li>
+    <li class="list-item" >Item 3 </li>
+</ul>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    function submitForm() {
+        var myform = document.forms,myForm
+        if(myForm.message.value === '')//se o campo do forme estiver vazio solto um alert 
+        alert ('Campo obrigatorio');
+        return false; //se não colocar o false ele acaba submetendo o formulario 
+
+
+    }
+
+//console = document.forms ele tem uma lista com os formularios para acesar o formulario document.forms.myForm podemos acessar os elemntos document.form.myForm.message.value assim acessamos o valor dele e com isso podemos fazer as validações  
+
+</script>
+
+<form aname="myForm" action="/abc" method="POST" onsubmit="return submitForm()"><!-- se não tiver o submit ele vai para a pagina de ação abc -->
+    <input type="text" name="message">
+    <button type="submit">enviar</button><!-- ele que fica responsavel por enviar  -->
+
+</form> 
+
+<!-- o action serve para falar para qual pagina vamos enviar 
+este submit ele vai retornar um valor true ou falso 
+
+<button onclik"myclic"> </button> ao invesde usar o lister podemos usar o onclik e chamar a função aqui 
+
+--> 
+    
+</body>
+</html>
+

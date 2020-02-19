@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<style>
+body{
+    background-color: black;
+    color: cornsilk;
+}
+
+</style>
+
+
+<script>
+//temos um div e um input, vamos selcionar estes elementos ele serve para que demos um intervalos para que ão seja recebido tudo de uma vez 
+    var myDiv = document.querySelectorAll('div'),
+    myInput = document.querySelectorAll('input');
+
+    var mytimeout;
+
+    myInput.addEventListener('keyup', function(){
+        clearTimeout(myTimeout);// se o usuario clicar de novo o mydiv não sera eecutado por que ele foi limpado so se ele parar de soltar a teclado por 1 segundo 
+        myTimeout = setTimeout(() => {
+            myDiv.textContent = this.value;
+        }, 1000);// de poisd e um segundo ele manda de novo 
+        myDiv.textContent = this.value;// conforme for escrevendo ele altera a div 
+    })// so que é ruim pois ele vai ficar disparando sem parar 
+
+
+</script>
+
+
+    
+<div></div>
+
+<input type="text" id="myInput">
+<button>Click Me</button>
+
+<ul>
+    <li class="list-item" >Item 1 </li>
+    <li class="list-item" >Item 2 </li>
+    <li class="list-item" >Item 3 </li>
+</ul>
+
+
+</body>
+</html>

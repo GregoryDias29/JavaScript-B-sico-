@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+
+
+</style>
+<script>
+// var list = [1,2,3], //iniciamos com uma lista com qualquer nuemro só para ela não inciar vazia 
+//     listElement = document.querySelector('ul');
+
+//     function insert(event){
+//         if(event.keyCode === 13){ // se fpr codigo 13 que é o enter se ele clicar em qualqeur outra tecla faz nada 
+//             list.push(event.target.value)//vamos inserir um novo intem / target que vai ser o input 
+//             event.target.value = '';
+//             render();
+//         }
+
+//     }
+
+//     function remove(index){//ela vai revcebr o indece que queremos remover
+//         list.splice(index, 1);//passamos o index e a quantidade que queremos remover 
+//         render();// para atulizar a lista 
+//     }
+
+//     function render(){
+//         listElement.innerHTML = list.map((item, index)=>{
+//             return `<li onclick="">${item}</li>`
+//         }).join(''); //map permite alterar cada um dos elementos para juntar todos os elemnteos 
+//     }
+//     render();
+
+var list = [1,2,3],
+	listElement = document.querySelector('ul');
+
+function insert(event){
+	if(event.keyCode === 13){
+		list.push(event.target.value);
+		event.target.value = '';
+		render();
+	}
+}
+
+function remove(index){
+	list.splice(index, 1);
+	render();
+}
+
+function render(){
+	listElement.innerHTML = list.map((item, index) => {
+		return `<li onclick="remove(${index})" >${item}</li>`;
+	}).join('');
+}
+
+
+render();
+
+
+</script>
+
+<input type="text" onkeyup="insert(event)" >
+<ul></ul>
+
+
+    
+</body>
+</html>
